@@ -1,0 +1,145 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Blog
+
+block basicSeo
+  meta(name='description' content='Blog page')
+  meta(name='keywords', content='blog, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(rel='manifest', href='../manifest.json')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+  .main_content.new-design
+    .slide-block
+      .wrapper-inner
+        .row
+          .col-12.col-lg-4.slide-block__text
+            h1
+              span!="Франшиза<br>"
+              | Магазин экомоющих на розлив “полоскун”
+            p Cвой бизнес за 400 000 рублей
+            p с оборотом от 2 000 000 рублей в год
+            a(href="#").new-design__button оставить заявку
+          .col-12.col-lg-7.offset-lg-1.slide-block__right
+            .slide-block__box
+              p Уже более 100 опорных партнеров в России и ближнем зарубежье
+            .slide-block__map
+              img(src=require('images/map.png'))
+            .slide-block__benefits
+              .slide-block__benefits-item
+                p!="Собственное<br>производство"
+              .slide-block__benefits-item.slide-block__benefits-dot
+                p!="Отсутствие<br>роялти"
+              .slide-block__benefits-item
+                p!="Окупаемость<br>от 3 месяцев"
+    .wrapper-inner
+      .about-block
+        .row
+          .col-12
+            h2!="“Полоскун”- это сеть магазинов эко<br> моющих средств отечественного<br> производства на розлив"
+          .col-12.col-lg-6
+            p Наша продукция была разработана, создана и испытана сприменением новейших технологий и полностью отвечает всем требованиям ВОЗ (Всемирная Организация Здоровья) Европейского сообщества, имеет сертификаты качества, паспорта экологической безопасности и заключения государственной санитарно- гигиенической экспертизы РФ.
+            p
+              span В состав средств входят только биологически разлагаемые компоненты. Средства не содержат фосфатов и парабенов.  А в качестве ПАВ применяются мягкие и максимально безопасные вещества на основе кокосового масла, сока свеклы итростинка.
+            p
+              span Производителем всей линейки средств, представленных в магазинах "Полоскун" является ООО «Мидэкс групп» — это инновационное научно-производственное предприятие, которое находится в г. Белгород и специализируется на изготовлении профессиональных технических моющих средств под маркой 1ЕЗО(, дерматологических защитных кремов под маркой СЕСО.
+              | Мы снабжаем защитными средствами такие крупные предприятия как Калашников, Сухой, завод ГАЗ, РЖД, Ленинградская Атомная станция, изготавливаем и поставляем технические моющие средства на пищевые производства. Сегодня в компании работает более 40 человек, выпуск продукции происходит круглосуточно.
+          .col-12.col-lg-6
+            .about-block__img-box
+              img(src=require('images/about01.png')).about-block__img
+              img(src=require('images/about02.png')).about-block__img
+    .franch-block
+      .wrapper-inner
+        .row
+          .franch-block__img-promo
+            img(src=require('images/franch01.png'))
+          .col-12
+            .franch-block__title
+              h2 ФРАНШИЗА “ПОЛОСКУН” - ЭТО:
+          .col-12.col-md-4.franch-block__box.franch-block__box--left
+            .franch-block__item
+              .franch-block__item-img
+                img(src=require('images/franch/franch-item02.png'))
+              .franch-block__item-text
+                p!="Cредний чек<br>"
+                  span 500 рублей
+            .franch-block__item
+              .franch-block__item-img
+                img(src=require('images/franch/franch-item02.png'))
+              .franch-block__item-text
+                p!="в среднем<br>"
+                  span!="1400 покупателей<br>"
+                  | в месяц
+            .franch-block__item
+              .franch-block__item-img
+                img(src=require('images/franch/franch-item03.png'))
+              .franch-block__item-text
+                p!="помещение<br>"
+                  span 15 м2
+          .col-12.col-md-4.franch-block__box.franch-block__box--center
+            img(src=require('images/logo.png')).franch-block__img-logo
+            .franch-block__human
+              p!="<span>штат</span> 1-2<br>человека"
+            .franch-block__img-promo
+              img(src=require('images/franch01.png'))
+          .col-12.col-md-4.franch-block__box.franch-block__box--right
+            .franch-block__item
+              .franch-block__item-img
+                img(src=require('images/franch/franch-item04.png'))
+              .franch-block__item-text
+                p!="наценка товара<br>"
+                  span в среднем 68%
+            .franch-block__item
+              .franch-block__item-img
+                img(src=require('images/franch/franch-item05.png'))
+              .franch-block__item-text
+                p!="окупаемость<br>"
+                  span!="инвестций<br>"
+                  | со 2 месяца
+            .franch-block__item
+              .franch-block__item-img
+                img(src=require('images/franch/franch-item06.png'))
+              .franch-block__item-text
+                p!="<span>прибыль</span> за год<br>"
+                  span от 2 000 000 р
+    .wrapper-inner
+      .fact-block
+        .fact-block__box
+          .fact-block__item
+            p!="01 - Финансовая модель, <span>в которой прописано все</span>"
+          .fact-block__item
+            p!="02 - <span>Четкие критерии</span> выбора помещения "
+          .fact-block__item
+            p!="03 - Делаем для франчайзи <span>дизайн - проект помещения</span>"
+          .fact-block__item
+            p!="04 - Поможем <span>раскрутить и провести открытие</span>"
+          .fact-block__item
+            p!="05 - Научим ваших сотрудников <span>продавать</span>"
+          .fact-block__item
+            p!="06 - Научим вас <span>управлять</span> своим магазином и людьми"
+          .fact-block__item
+            p!="07 - Даем сквозную аналитикуи <span>научим работать с Показателями</span>"
+          .fact-block__item
+            p!="08 - <span>Контролируем качество</span>,вплоть до каждого сотрудника в сети"
+          .fact-block__item
+            p!="09 - <span>База знаний</span> с описанием бизнес процессов, стандартов и кейсов"
+          .fact-block__item
+            p!="10 - <span>Партнеры —</span> самые крепкие звенья нашей сети "
+    .wrapper-inner
+      .tovar-block
+        .row
+          .col-12.tovar-block__title
+            h2 БОЛЕЕ 50 РАЗЛИЧНЫХ ТОВАРНЫХ НАИМЕНОВАНИЙ
+            p  СОБСТВЕННОГО ПРОИЗВОДСТВА
+        .row
+          +tovar-block-item(require('images/tovar/item-01.png'), 'ГЕЛИ ДЛЯ ДУША')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'КРЕМ-МЫЛО')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'СРЕДСТВа ДЛЯ  авпваи МЫТЬЯ ПОСУДЫ')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'ГЕЛИ ДЛЯ СТИРКИ')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'КОНДИЦИОНЕРЫ ДЛЯ БЕЛЬЯ')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'СРЕДСТВА ДЛЯ УБОРКИ')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'КОСМЕТИЧЕСКИЕ СРЕДСТВА')

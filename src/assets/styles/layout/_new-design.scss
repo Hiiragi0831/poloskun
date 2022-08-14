@@ -1,0 +1,66 @@
+.new-design {
+  h1, h2, h3, h4, h5, h6, p, span {
+    font-family: $gilroy;
+    font-style: normal;
+    color: $color-one;
+    letter-spacing: 0.03em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    span {
+      color: $color-two;
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 130%;
+
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 135%;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+
+    span {
+      color: $color-one-light;
+      font-weight: 400;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &__button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: $gilroy;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 30px 74px;
+    color: $color-white;
+    background-color: $color-two;
+
+    &:hover {
+      color: $color-white;
+      opacity: 0.8;
+    }
+  }
+}

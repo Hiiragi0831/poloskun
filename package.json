@@ -54,10 +54,7 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-notifier": "^1.13.0"
   },
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "normalize.css": "^8.0.1"
-  },
+  "dependencies": {},
   "browserslist": [
     "defaults"
   ]
