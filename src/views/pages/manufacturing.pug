@@ -19,12 +19,12 @@ block content
         .row
           .slide-block-two__bg
             img(src=require('images/slide-two-bg.png'))
-          .col-12.col-lg-4
+          .col-12.col-md-6.col-lg-4
             .slide-block-two__text
               h1 КОНТРАКТНОЕ ПРОИЗВОДСТВО КОСМЕТИКИ
               h3 И БЫТОВОЙ ХИМИИ
               p Под вашим брендом или под собственной торговой маркой
-              a(href="#").new-design__button получить консультацию
+              a(href="#contact").new-design__button получить консультацию
     .about-block-two
       .wrapper-inner
         .row
@@ -52,43 +52,50 @@ block content
       .wrapper-inner
         .row
           .col-12
-            .tabs
-              .tabs__content
-                .tabs__content-item.is-active(data-id="0")
-                  img(src=require('images/steps01.png'))
-                  .tabs__content-item-text
-                    h1 производство продукции
-                    p В вашем распоряжении наше собственное производство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
-                .tabs__content-item(data-id="1")
-                  img(src=require('images/steps01.png'))
-                  .tabs__content-item-text
-                    h1 Закупка сырья и материалов
-                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
-                .tabs__content-item(data-id="2")
-                  img(src=require('images/steps01.png'))
-                  .tabs__content-item-text
-                    h1 Полный цикл изготовления
-                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
-                .tabs__content-item(data-id="3")
-                  img(src=require('images/steps01.png'))
-                  .tabs__content-item-text
-                    h1 Документальное сопровождение
-                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
-                .tabs__content-item(data-id="4")
-                  img(src=require('images/steps01.png'))
-                  .tabs__content-item-text
-                    h1 Хранение готовой продукции
-                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
-              .tabs__nav
-                .tabs__nav-item.is-active(data-id="0")
+            .steps-block-slider
+              .steps-block-slider__content
+                .swiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      .steps-block-slider__content-item
+                        img(src=require('images/steps01.png'))
+                        .steps-block-slider__content-item-text
+                          h1 производство продукции
+                          p В вашем распоряжении наше собственное производство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                    .swiper-slide
+                      .steps-block-slider__content-item
+                        img(src=require('images/steps01.png'))
+                        .steps-block-slider__content-item-text
+                          h1 Закупка сырья и материалов
+                          p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                    .swiper-slide
+                      .steps-block-slider__content-item
+                        img(src=require('images/steps01.png'))
+                        .steps-block-slider__content-item-text
+                          h1 Полный цикл изготовления
+                          p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                    .swiper-slide
+                      .steps-block-slider__content-item
+                        img(src=require('images/steps01.png'))
+                        .steps-block-slider__content-item-text
+                          h1 Документальное сопровождение
+                          p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                    .swiper-slide
+                      .steps-block-slider__content-item
+                        img(src=require('images/steps01.png'))
+                        .steps-block-slider__content-item-text
+                          h1 Хранение готовой продукции
+                          p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+              .steps-block-slider__nav
+                .steps-block-slider__nav-item.is-active(data-id="0")
                   p 01 - Разработка оригинальных рецептур или доработка имеющихся в соответствие с требованиями заказчика
-                .tabs__nav-item(data-id="1")
+                .steps-block-slider__nav-item(data-id="1")
                   p 02 - Закупка сырья и материалов, проведение входного контроля
-                .tabs__nav-item(data-id="2")
+                .steps-block-slider__nav-item(data-id="2")
                   p 03 - Полный цикл изготовления продукции и упаковка
-                .tabs__nav-item(data-id="3")
+                .steps-block-slider__nav-item(data-id="3")
                   p 04 - Документальное сопровождение, в том числе сертификация и гос.регистрация
-                .tabs__nav-item(data-id="4")
+                .steps-block-slider__nav-item(data-id="4")
                   p 05 - Хранение готовой продукции и доставка на склад Заказчика
         .row.steps-block__bottom
           .col-12.col-lg-4
@@ -140,6 +147,35 @@ block content
             .ferula-block__title
               p.h1!="МЫ ПРОИЗВОДИМ СОБСТВЕННУЮ ЛИНЕЙКУ БИОРАЗЛАГАЕМОЙ <span>ЭКО</span> ПРОДУКЦИИ,"
               p.h3 НЕ ВЫЗЫВАЮЩЕЙ АЛЛЕРГИИ
+            .ferula-block__slider
+              .swiper
+                .swiper-wrapper
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-01.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-02.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-03.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-04.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-01.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-02.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-03.png"))
+                  .swiper-slide
+                    a(href="#")
+                      img(src=require("images/ferula/slide-04.png"))
+              .swiper-button-next.ferula-block__slider-button-next
+              .swiper-button-prev.ferula-block__slider-button-prev
 
 
     include ../components/contact-block

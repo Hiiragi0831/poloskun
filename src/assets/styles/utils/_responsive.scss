@@ -22,7 +22,3 @@
 @function vt($value, $base: $tablet) {
 	@return $value / $base * 100vmin;
 }
-
-@function vc($value) {
-  @return calc(#{$value} * var(--width-multiplier));
-}

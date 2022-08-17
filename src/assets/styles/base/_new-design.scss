@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .new-design {
   h1, h2, h3, h4, h5, h6, p, span, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $gilroy;
@@ -59,15 +62,27 @@
     text-transform: uppercase;
     font-family: $gilroy;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 30px 74px;
+    font-size: vw(14);
+    line-height: vw(20);
+    padding: vw(30) vw(74);
     color: $color-white;
     background-color: $color-two;
 
     &:hover {
       color: $color-white;
       opacity: 0.8;
+    }
+
+    @include mobile {
+      padding: px(15) px(30);
+      font-size: px(12);
+      line-height: px(16);
+    }
+
+    @include desktop {
+      padding: px(30) px(74);
+      font-size: px(14);
+      line-height: px(20);
     }
   }
 }
