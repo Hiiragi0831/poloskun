@@ -1,0 +1,42 @@
+//- src/views/components/footer.pug
+
+.contact-block
+  .wrapper-inner
+    .row
+      .col-12.col-lg-6
+        h2 ХОТИТЕ ОТКРЫТЬ МАГАЗИН “ПОЛОСКУН” В ВАШЕМ ГОРОДЕ, СТАВ НАШИМ ПАРТНЕРОМ?
+        .contact-block__manager
+          .contact-block__avatar
+            img(src=require('images/avatar.png'))
+          .contact-block__text
+            p Оставьте заявку и наш специалист свяжется с вами в ближайшее время, чтобы ответить на все интересуещие вас вопросы
+      .col-12.col-lg-6
+        form.contact-block__form
+          .contact-block__input-group
+            input(placeholder="Ваше имя" type="text")
+            img(src=require('images/icons/icon-name.svg'))
+          .contact-block__input-group
+            input(placeholder="Ваш город" type="text")
+            img(src=require('images/icons/icon-phone.svg'))
+          .contact-block__input-group
+            input(placeholder="+ 7(__)-___-__-__" type="text")#phone-mask
+            img(src=require('images/icons/icon-phone.svg'))
+          .contact-block__input-group.contact-block__input-group-text
+            textarea(placeholder="Текст сообщения")
+            img(src=require('images/icons/icon-text.svg'))
+          .contact-block__input-group
+            input(placeholder="Электронная почта" type="email")
+            img(src=require('images/icons/icon-mail.svg'))
+          .contact-block__input-group
+            p Подходящее время для звонка (по МСК)
+          .contact-block__input-group.contact-block__input-group-select
+            select
+              option(value="с 9:00 до 12:00") с 9:00 до 12:00
+              option(value="с 12:00 до 14:00") с 12:00 до 14:00
+              option(value="с 14:00 до 18:00") с 14:00 до 18:00
+            img(src=require('images/icons/icon-arrow-down.svg'))
+          .contact-block__input-group
+            button.new-design__button отправить заявку
+          .contact-block__input-group.contact-block__input-group-check
+            input(id="checkboxid" name="checkboxid" type="checkbox")
+            label(for="checkboxid") Даю согласие  на обоаботку персональных данных

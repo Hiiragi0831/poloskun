@@ -1,0 +1,105 @@
+.tabs {
+  display: flex;
+
+  &__content {
+    flex: 0 0 60%;
+    max-width: 60%;
+
+    &-item {
+      position: relative;
+      height: 100%;
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+      transition: visibility 0.4s, opacity 0.4s;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+
+      &-text {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        right: 40px;
+
+        h1, p {
+          background-color: white;
+          padding: 20px 30px;
+          display: inline-block;
+        }
+
+        h1 {
+          margin-bottom: 10px;
+          font-size: 32px;
+          line-height: 32px;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: $color-one-light;
+        }
+      }
+      &.is-active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 40px;
+    z-index: 1;
+
+    &-item {
+      margin-bottom: 40px;
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $color-one-light;
+        transition: color 0.4s;
+      }
+
+      &:hover {
+        cursor: pointer;
+        p {
+          color: $color-two;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        background-image: url("@~images/icons/arrow-tab.svg");
+        width: 56px;
+        height: 104px;
+        left: -25px;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0.4s, opacity 0.4s;
+      }
+
+      &.is-active {
+        p {
+          color: $color-two;
+        }
+
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

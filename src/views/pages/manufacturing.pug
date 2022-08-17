@@ -13,7 +13,133 @@ block manifestBrowserconfigFiles
   meta(name='msapplication-config' content='../browserconfig.xml')
 
 block content
+  .main_content.new-design
+    .slide-block-two
+      .wrapper-inner
+        .row
+          .slide-block-two__bg
+            img(src=require('images/slide-two-bg.png'))
+          .col-12.col-lg-4
+            .slide-block-two__text
+              h1 КОНТРАКТНОЕ ПРОИЗВОДСТВО КОСМЕТИКИ
+              h3 И БЫТОВОЙ ХИМИИ
+              p Под вашим брендом или под собственной торговой маркой
+              a(href="#").new-design__button получить консультацию
+    .about-block-two
+      .wrapper-inner
+        .row
+          .col-12.col-lg-5
+            p.h3 “под ключ”-
+            p.h1!="ОТ РАЗРАБОТКИ РЕЦЕПТУРЫ<br>"
+              span ДО СЕРИЙНОГО ВЫПУСКА
+          .col-12.col-lg-7
+            .about-block-two__hr
+            .about-block-two__text
+              p ООО “Мидэкс групп”- это контрактное производство полного цикла. Мы можем подготовить дизайн, упаковку и, конечно же, произвести продукцию, как по вашей формуле, так и специально разработанной для вас.
+            .about-block-two__box
+              img(src=require('images/about-two-icon.png'))
+              p Собственная научно-техическая лаборатория обеспечивает многоступенчатый и многофакторный контроль продукции и этапов производства.
+    .manufacturing-block
+      .wrapper-inner
+        .row
+          .col-12.tovar-block__title
+            h2 Основные направления производства
+        .row
+          +tovar-block-item(require('images/tovar/item-01.png'), 'Косметические средства')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'Дерматологические средства индивидуальной защиты')
+          +tovar-block-item(require('images/tovar/item-01.png'), 'моющие средства')
+    .steps-block
+      .wrapper-inner
+        .row
+          .col-12
+            .tabs
+              .tabs__content
+                .tabs__content-item.is-active(data-id="0")
+                  img(src=require('images/steps01.png'))
+                  .tabs__content-item-text
+                    h1 производство продукции
+                    p В вашем распоряжении наше собственное производство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                .tabs__content-item(data-id="1")
+                  img(src=require('images/steps01.png'))
+                  .tabs__content-item-text
+                    h1 Закупка сырья и материалов
+                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                .tabs__content-item(data-id="2")
+                  img(src=require('images/steps01.png'))
+                  .tabs__content-item-text
+                    h1 Полный цикл изготовления
+                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                .tabs__content-item(data-id="3")
+                  img(src=require('images/steps01.png'))
+                  .tabs__content-item-text
+                    h1 Документальное сопровождение
+                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+                .tabs__content-item(data-id="4")
+                  img(src=require('images/steps01.png'))
+                  .tabs__content-item-text
+                    h1 Хранение готовой продукции
+                    p В вашем распоряжении наше собственноепроизводство в городе Белгород. Специализирующееся на выпуске жидкой бытовой химии, смываемых косметических средств и ДСИЗ. Современное оборудование позволяет работать ссовершенно разными составами.
+              .tabs__nav
+                .tabs__nav-item.is-active(data-id="0")
+                  p 01 - Разработка оригинальных рецептур или доработка имеющихся в соответствие с требованиями заказчика
+                .tabs__nav-item(data-id="1")
+                  p 02 - Закупка сырья и материалов, проведение входного контроля
+                .tabs__nav-item(data-id="2")
+                  p 03 - Полный цикл изготовления продукции и упаковка
+                .tabs__nav-item(data-id="3")
+                  p 04 - Документальное сопровождение, в том числе сертификация и гос.регистрация
+                .tabs__nav-item(data-id="4")
+                  p 05 - Хранение готовой продукции и доставка на склад Заказчика
+        .row.steps-block__bottom
+          .col-12.col-lg-4
+            h2.h1!="КОНТРАКТНОЕ <span>ПРОИЗВОДСТВО</span> БЫТОВОЙ ХИМИИ И СОСТАВОВ"
+            p.h3 для профессионального применения
+          .col-12.col-lg-4.steps-block__bottle
+            img(src=require('images/bottle.png'))
+          .col-12.col-lg-4.steps-block__quote
+            p осуществляется согласно техническому заданию на разработку,а также по предоставленным Заказчиком российским или зарубежным образцам-аналогам.
+            a(href="#").new-design__button получить консультацию
+    .advantages-block
+      .wrapper-inner
+        .row
+          .col-12
+            p.h1 НАШИ ПРЕИМУЩЕСТВА
+        .row
+          .col-12.col-md-6.col-lg-3.advantages-block__item
+            .advantages-block__img
+              img(src=require("images/advantages/advantages01.png"))
+            .advantages-block__title
+              p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
+            .advantages-block__text
+              p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
+          .col-12.col-md-6.col-lg-3.advantages-block__item
+            .advantages-block__img
+              img(src=require("images/advantages/advantages02.png"))
+            .advantages-block__title
+              p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
+            .advantages-block__text
+              p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
+          .col-12.col-md-6.col-lg-3.advantages-block__item
+            .advantages-block__img
+              img(src=require("images/advantages/advantages03.png"))
+            .advantages-block__title
+              p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
+            .advantages-block__text
+              p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
+          .col-12.col-md-6.col-lg-3.advantages-block__item
+            .advantages-block__img
+              img(src=require("images/advantages/advantages04.png"))
+            .advantages-block__title
+              p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
+            .advantages-block__text
+              p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
+    .ferula-block
+      .wrapper-inner
+        .row
+          .col-12
+            .ferula-block__title
+              p.h1!="МЫ ПРОИЗВОДИМ СОБСТВЕННУЮ ЛИНЕЙКУ БИОРАЗЛАГАЕМОЙ <span>ЭКО</span> ПРОДУКЦИИ,"
+              p.h3 НЕ ВЫЗЫВАЮЩЕЙ АЛЛЕРГИИ
 
-  //- BLog page
-  section.page.blog__page
-    h1.page__title # Blog page
+
+    include ../components/contact-block

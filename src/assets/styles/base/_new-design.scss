@@ -1,35 +1,9 @@
 .new-design {
-  h1, h2, h3, h4, h5, h6, p, span {
+  h1, h2, h3, h4, h5, h6, p, span, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $gilroy;
     font-style: normal;
     color: $color-one;
     letter-spacing: 0.03em;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    span {
-      color: $color-two;
-    }
-  }
-
-  h1 {
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 130%;
-
-    @media (max-width: 767px) {
-      font-size: 26px;
-    }
-  }
-
-  h2 {
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 135%;
-
-    @media (max-width: 767px) {
-      font-size: 24px;
-    }
   }
 
   p {
@@ -40,6 +14,39 @@
     span {
       color: $color-one-light;
       font-weight: 400;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    span {
+      color: $color-two;
+      font-weight: 600;
+    }
+  }
+
+  h3, .h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h2, .h2 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 135%;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+
+  h1, .h1 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 130%;
+
+    @media (max-width: 767px) {
+      font-size: 26px;
     }
   }
 

@@ -384,6 +384,16 @@
         max-width: 50%;
       }
     }
+
+    @media (max-width: 520px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      &:nth-child(-n+3) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
   }
 
   &__item-img {
@@ -628,6 +638,259 @@
         font-size: 12px;
         line-height: 18px;
       }
+    }
+  }
+}
+
+.slide-block-two {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+      object-position: 50% 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    padding: 73px 0;
+
+    h1, h3 {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-bottom: 7px;
+    }
+
+    p {
+      margin: 30px 0 40px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $color-one-light;
+    }
+  }
+}
+
+.about-block-two {
+  margin: 100px 0 70px;
+
+  h1, h3 {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    line-height: 60px;
+  }
+
+  &__hr {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(79, 97, 107, 0.1);
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-left: 80px;
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      color: $color-one-light;
+    }
+
+    @media (max-width: 991px) {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+
+  &__box {
+    margin-top: 26px;
+    margin-left: 80px;
+    display: flex;
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $color-one-light;
+    }
+
+    img {
+      width: vc(170);
+      margin: auto;
+      height: 100%;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.manufacturing-block {
+  margin: 70px 0 120px;
+}
+
+.steps-block {
+  padding: 100px 0 130px;
+  background-color: #F6F6F6;
+  background-image: url("@~images/bg-steps.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__bottom {
+    margin-top: 120px;
+
+    h1, h3 {
+      color: $color-thee;
+    }
+
+    .h1 {
+      font-size: 44px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+
+    .h3 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__quote {
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: -90px;
+      width: 86px;
+      height: 70px;
+      background-image: url("@~images/icons/icon-quote.svg");
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $color-one-light;
+    }
+
+    .new-design__button {
+      margin-top: 50px;
+    }
+  }
+
+  &__bottle {
+    z-index: 2;
+    img {
+      position: absolute;
+      bottom: -130px;
+    }
+  }
+}
+
+.advantages-block {
+  padding: 110px 0;
+
+  .h1 {
+    text-align: center;
+  }
+
+  &__item {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &__img {
+    display: flex;
+    position: relative;
+    height: 300px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #F6F6F6;
+    }
+
+    img {
+      z-index: 1;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 8px 0;
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    p {
+      color: $color-one-light;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+.ferula-block {
+  padding: 110px 0;
+
+  &__title {
+    text-align: center;
+
+    .h1 {
+      font-size: 44px;
+      line-height: 60px;
+
+      span {
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 27px;
+          height: 35px;
+          background-image: url("@~images/icons/icon-leaf.svg");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .h3 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 60px;
     }
   }
 }
