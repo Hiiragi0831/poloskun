@@ -10,8 +10,51 @@ block manifestBrowserconfigFiles
 block content
 
   //- Index page
-  section.page.home__page
+  section.new-design
     h1
       a(href="/franchise").page__title franchise
     h1
       a(href="/manufacturing").page__title manufacturing
+    h1
+      a(href="#" data-open-modal="feedback").page__title modal
+
+    .modal.modal--preload.modal--feedback(data-modal="feedback")
+      .modal__wrapper
+        .modal__overlay(data-close-modal)
+        .modal__content
+          p.h1 ВЫберите город
+          .city
+            .city__box
+              p.city__title Регион
+              .city__wrapper(data-simplebar data-simplebar-auto-hide="false")
+                p.city__item  Амурская область
+                p.city__item  Архангельская область
+                p.city__item.is-active  Белгородская область
+                p.city__item  Владимирская область
+                p.city__item  Волгоградская область
+                p.city__item  Воронежская область
+                p.city__item  Ивановская область
+                p.city__item  Иркутская область
+                p.city__item  Амурская область
+                p.city__item  Амурская область
+                p.city__item  Амурская область
+                p.city__item  Амурская область
+                p.city__item  Амурская область
+            .city__box
+              p.city__title Город
+              .city__wrapper(data-simplebar data-simplebar-auto-hide="false")
+                p.city__item.is-active  г. Белгород
+                p.city__item  г. Старый Оскол
+                p.city__item  г. Строитель
+                p.city__item  пгт. Разумное
+
+
+          .modal__check
+            .modal__check-box
+              input(id="checkboxid" name="checkboxid" type="checkbox")
+              label(for="checkboxid") Другой город
+            p Оформление заказа и доставка в города, не входящие в список временно недоступны
+          a(href="#").new-design__button Сохранить
+          button.modal__close-btn(type="button", aria-label="Закрыть попап", data-close-modal)
+            img(src=require('images/icons/icon-close.svg'))
+

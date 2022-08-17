@@ -650,11 +650,11 @@
       }
 
       label {
-        width: 87px;
+        display: flex;
         font-family: $gilroy;
         letter-spacing: 0.03em;
         font-weight: 300;
-        display: flex;
+        width: 188px;
         font-size: 12px;
         line-height: 18px;
         color: #999;
@@ -664,9 +664,9 @@
           width: 80px;
           flex-shrink: 0;
           margin-right: 20px;
-          display: block;
+          display: inline-block;
           height: 100%;
-           background-color: #F6F7F8;
+          background-color: #F6F7F8;
         }
       }
     }

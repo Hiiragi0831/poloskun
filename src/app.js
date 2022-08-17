@@ -1,9 +1,13 @@
 /* src/app.js */
 import IMask from 'imask';
+import 'simplebar'; // or "import SimpleBar from 'simplebar';" if you want to use it manually.
+import 'simplebar/dist/simplebar.css';
 
 // Styles
 import 'styles/_app.scss'
+import {initModals} from "./assets/scripts/modals/init-modals";
 
+initModals();
 
 if (document.getElementById('phone-mask')) {
   new IMask(
