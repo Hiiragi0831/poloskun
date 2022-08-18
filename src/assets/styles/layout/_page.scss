@@ -525,6 +525,7 @@
   &__manager {
     display: flex;
     align-items: flex-end;
+    margin-top: 10px;
 
     @media (max-width: 991px) {
       margin-bottom: 30px;

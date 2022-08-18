@@ -24,12 +24,12 @@ block content
         .modal__content
           p.h1 ВЫберите город
           .city
-            .city__box
+            .city__box.city__regoin
               p.city__title Регион
               .city__wrapper(data-simplebar data-simplebar-auto-hide="false")
                 p.city__item  Амурская область
                 p.city__item  Архангельская область
-                p.city__item.is-active  Белгородская область
+                p.city__item  Белгородская область
                 p.city__item  Владимирская область
                 p.city__item  Волгоградская область
                 p.city__item  Воронежская область
@@ -40,7 +40,7 @@ block content
                 p.city__item  Амурская область
                 p.city__item  Амурская область
                 p.city__item  Амурская область
-            .city__box
+            .city__box.city__gorod
               p.city__title Город
               .city__wrapper(data-simplebar data-simplebar-auto-hide="false")
                 p.city__item.is-active  г. Белгород
@@ -51,9 +51,9 @@ block content
 
           .modal__check
             .modal__check-box
-              input(id="checkboxid" name="checkboxid" type="checkbox")
-              label(for="checkboxid") Другой город
-            p Оформление заказа и доставка в города, не входящие в список временно недоступны
+              input(id="another" name="another" type="checkbox")
+              label(for="another") Другой город
+            p.modal__check-text Оформление заказа и доставка в города, не входящие в список временно недоступны
           a(href="#").new-design__button Сохранить
           button.modal__close-btn(type="button", aria-label="Закрыть попап", data-close-modal)
             img(src=require('images/icons/icon-close.svg'))

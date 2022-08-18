@@ -13,19 +13,19 @@
       .col-12.col-lg-6
         form.contact-block__form
           .contact-block__input-group
-            input(placeholder="Ваше имя" type="text")
+            input(placeholder="Ваше имя" type="text" required)
             img(src=require('images/icons/icon-name.svg'))
           .contact-block__input-group
-            input(placeholder="Ваш город" type="text")
+            input(placeholder="Ваш город" type="text" required)
             img(src=require('images/icons/icon-phone.svg'))
           .contact-block__input-group
-            input(placeholder="+ 7(__)-___-__-__" type="text")#phone-mask
+            input(placeholder="+ 7(__)-___-__-__" type="text" required)#phone-mask
             img(src=require('images/icons/icon-phone.svg'))
           .contact-block__input-group.contact-block__input-group-text
             textarea(placeholder="Текст сообщения")
             img(src=require('images/icons/icon-text.svg'))
           .contact-block__input-group
-            input(placeholder="Электронная почта" type="email")
+            input(placeholder="Электронная почта" type="email" required)
             img(src=require('images/icons/icon-mail.svg'))
           .contact-block__input-group
             p Подходящее время для звонка (по МСК)

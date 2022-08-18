@@ -50,10 +50,8 @@
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     cursor: pointer;
   }
 
@@ -184,6 +182,17 @@
         border: 1px solid #B1B1B1;
         background-color: #ffffff;
       }
+    }
+  }
+
+  &__check-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+
+    &.is-visible {
+      visibility: visible;
+      opacity: 1;
     }
   }
 
