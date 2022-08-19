@@ -30,11 +30,11 @@ block content
             .slide-block__map
               img(src=require('images/map.png'))
             .slide-block__benefits
-              .slide-block__benefits-item
+              .slide-block__benefits-item(data-aos="fade-up")
                 p!="Собственное<br>производство"
-              .slide-block__benefits-item.slide-block__benefits-dot
+              .slide-block__benefits-item.slide-block__benefits-dot(data-aos="fade-up")
                 p!="Отсутствие<br>роялти"
-              .slide-block__benefits-item
+              .slide-block__benefits-item(data-aos="fade-up")
                 p!="Окупаемость<br>от 3 месяцев"
     .about-block
       .wrapper-inner
@@ -64,21 +64,21 @@ block content
           .col-12
             .franch-block__title
               h2 ФРАНШИЗА “ПОЛОСКУН” - ЭТО:
-          .col-12.col-md-4.franch-block__box.franch-block__box--left.order-1.order-md-0
-            .franch-block__item
+          .col-12.col-sm-6.col-md-4.franch-block__box.franch-block__box--left.order-1.order-md-0
+            .franch-block__item(data-aos="fade-up" data-aos-duration="1000")
               .franch-block__item-img
                 img(src=require('images/franch/franch-item01.png'))
               .franch-block__item-text
                 p!="Cредний чек<br>"
                   span 500 рублей
-            .franch-block__item
+            .franch-block__item(data-aos="fade-up" data-aos-duration="1000")
               .franch-block__item-img
                 img(src=require('images/franch/franch-item02.png'))
               .franch-block__item-text
                 p!="в среднем<br>"
                   span!="1400 покупателей<br>"
                   | в месяц
-            .franch-block__item
+            .franch-block__item(data-aos="fade-up" data-aos-duration="1000")
               .franch-block__item-img
                 img(src=require('images/franch/franch-item03.png'))
               .franch-block__item-text
@@ -86,21 +86,21 @@ block content
                   span 15 м2
           .col-12.col-md-4.franch-block__box.franch-block__box--center.order-0.order-md-1
             img(src=require('images/logo.png')).franch-block__img-logo
-          .col-12.col-md-4.franch-block__box.franch-block__box--right.order-2.order-md-2
-            .franch-block__item
+          .col-12.col-sm-6.col-md-4.franch-block__box.franch-block__box--right.order-2.order-md-2
+            .franch-block__item(data-aos="fade-up" data-aos-duration="1000")
               .franch-block__item-img
                 img(src=require('images/franch/franch-item04.png'))
               .franch-block__item-text
                 p!="наценка товара<br>"
                   span в среднем 68%
-            .franch-block__item
+            .franch-block__item(data-aos="fade-up" data-aos-duration="1000")
               .franch-block__item-img
                 img(src=require('images/franch/franch-item05.png'))
               .franch-block__item-text
                 p!="окупаемость<br>"
                   span!="инвестций<br>"
                   | со 2 месяца
-            .franch-block__item
+            .franch-block__item(data-aos="fade-up" data-aos-duration="1000")
               .franch-block__item-img
                 img(src=require('images/franch/franch-item06.png'))
               .franch-block__item-text
@@ -109,25 +109,25 @@ block content
     .fact-block
       .wrapper-inner
         .fact-block__box
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="01 - Финансовая модель, <span>в которой прописано все</span>"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="02 - <span>Четкие критерии</span> выбора помещения "
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="03 - Делаем для франчайзи <span>дизайн - проект помещения</span>"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="04 - Поможем <span>раскрутить и провести открытие</span>"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="05 - Научим ваших сотрудников <span>продавать</span>"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="06 - Научим вас <span>управлять</span> своим магазином и людьми"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="07 - Даем сквозную аналитикуи <span>научим работать с Показателями</span>"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="08 - <span>Контролируем качество</span>,вплоть до каждого сотрудника в сети"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="09 - <span>База знаний</span> с описанием бизнес процессов, стандартов и кейсов"
-          .fact-block__item
+          .fact-block__item(data-aos="fade-up" data-aos-duration="1000")
             p!="10 - <span>Партнеры —</span> самые крепкие звенья нашей сети "
     .tovar-block
       .wrapper-inner
@@ -149,30 +149,69 @@ block content
           .col-12.col-md-6.col-xl-4.offset-xl-4
             h2 ПОЧЕМУ КЛИЕНТ ПРИДЕТ К ВАМ?
           .col-12.col-md-6.col-xl-4
-            .why-block__item
+            .why-block__item(data-aos="fade-up" data-aos-duration="1000")
               .why-block__icon
                 img(src=require('images/icons/check.svg'))
               .why-block__text
                 p!="Возможность приобретения гипоаллергенных товаров <span>премиум качества по справедливым ценам</span>"
-            .why-block__item
+            .why-block__item(data-aos="fade-up" data-aos-duration="1000")
               .why-block__icon
                 img(src=require('images/icons/check.svg'))
               .why-block__text
                 p!="<span>Стабильное качество продукта,</span> гарантированное производителем"
-            .why-block__item
+            .why-block__item(data-aos="fade-up" data-aos-duration="1000")
               .why-block__icon
                 img(src=require('images/icons/check.svg'))
               .why-block__text
                 p!="<span>Изготовление новых продуктов,</span> ориентируясь на мнение клиентов"
-            .why-block__item
+            .why-block__item(data-aos="fade-up" data-aos-duration="1000")
               .why-block__icon
                 img(src=require('images/icons/check.svg'))
               .why-block__text
                 p!="<span>Продукт без переплаты за упаковку и бренд</span> (упаковка, как правило, составляет до 50% стоимости продукта)"
-            .why-block__item
+            .why-block__item(data-aos="fade-up" data-aos-duration="1000")
               .why-block__icon
                 img(src=require('images/icons/check.svg'))
               .why-block__text
                 p!="Покупка <span>напрямую с завода - изготовителя</span>"
+    .contact-block#contact
+      .wrapper-inner
+        .row
+          .col-12.col-lg-6
+            h2 ХОТИТЕ ОТКРЫТЬ МАГАЗИН “ПОЛОСКУН” В ВАШЕМ ГОРОДЕ, СТАВ НАШИМ ПАРТНЕРОМ?
+            .contact-block__manager
+              .contact-block__avatar
+                img(src=require('images/avatar.png'))
+              .contact-block__text
+                p Оставьте заявку и наш специалист свяжется с вами в ближайшее время, чтобы ответить на все интересуещие вас вопросы
+          .col-12.col-lg-6
+            form.contact-block__form
+              .contact-block__input-group.contact-block__input-group--name
+                input(placeholder="Ваше имя" type="text" required)
+                img(src=require('images/icons/icon-name.svg'))
+              .contact-block__input-group.contact-block__input-group--city
+                input(placeholder="Ваш город" type="text" required)
+                img(src=require('images/icons/icon-map.svg'))
+              .contact-block__input-group.contact-block__input-group--phone
+                input(placeholder="+ 7(__)-___-__-__" type="text" required)#phone-mask
+                img(src=require('images/icons/icon-phone.svg'))
+              .contact-block__input-group.contact-block__input-group-text.contact-block__input-group--message
+                textarea(placeholder="Текст сообщения")
+                img(src=require('images/icons/icon-text.svg'))
+              .contact-block__input-group.contact-block__input-group--mail
+                input(placeholder="Электронная почта" type="email" required)
+                img(src=require('images/icons/icon-mail.svg'))
+              .contact-block__input-group.contact-block__input-group--time-text
+                p Подходящее время для звонка (по МСК)
+              .contact-block__input-group.contact-block__input-group-select.contact-block__input-group--time
+                select
+                  option(value="с 9:00 до 12:00") с 9:00 до 12:00
+                  option(value="с 12:00 до 14:00") с 12:00 до 14:00
+                  option(value="с 14:00 до 18:00") с 14:00 до 18:00
+                img(src=require('images/icons/icon-arrow-down.svg'))
+              .contact-block__input-group.contact-block__input-group--button
+                button.new-design__button отправить заявку
+              .contact-block__input-group.contact-block__input-group-check.contact-block__input-group--check
+                input(id="checkboxid" name="checkboxid" type="checkbox")
+                label(for="checkboxid") Даю согласие  на обоаботку персональных данных
 
-    include ../components/contact-block

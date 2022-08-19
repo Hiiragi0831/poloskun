@@ -52,6 +52,7 @@ block content
       .wrapper-inner
         .row
           .col-12
+            p.h1 ЭТАПЫ КОНТРАКТНОГО ПРОИЗВОДСТВА
             .steps-block-slider
               .steps-block-slider__content
                 .swiper
@@ -112,28 +113,28 @@ block content
           .col-12
             p.h1 НАШИ ПРЕИМУЩЕСТВА
         .row
-          .col-12.col-md-6.col-lg-3.advantages-block__item
+          .col-12.col-md-6.col-lg-3.advantages-block__item(data-aos="fade-up" data-aos-duration="1000")
             .advantages-block__img
               img(src=require("images/advantages/advantages01.png"))
             .advantages-block__title
               p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
             .advantages-block__text
               p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
-          .col-12.col-md-6.col-lg-3.advantages-block__item
+          .col-12.col-md-6.col-lg-3.advantages-block__item(data-aos="fade-up" data-aos-duration="1000")
             .advantages-block__img
               img(src=require("images/advantages/advantages02.png"))
             .advantages-block__title
               p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
             .advantages-block__text
               p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
-          .col-12.col-md-6.col-lg-3.advantages-block__item
+          .col-12.col-md-6.col-lg-3.advantages-block__item(data-aos="fade-up" data-aos-duration="1000")
             .advantages-block__img
               img(src=require("images/advantages/advantages03.png"))
             .advantages-block__title
               p ОРИГИНАЛЬНАЯ РЕЦЕПТУРА
             .advantages-block__text
               p Большой портфель готовых и отработанных решений. разработка индивидуальной рецептуры. Предоставляем результаты лабораторных испытания и образцы.
-          .col-12.col-md-6.col-lg-3.advantages-block__item
+          .col-12.col-md-6.col-lg-3.advantages-block__item(data-aos="fade-up" data-aos-duration="1000")
             .advantages-block__img
               img(src=require("images/advantages/advantages04.png"))
             .advantages-block__title
@@ -176,6 +177,37 @@ block content
                       img(src=require("images/ferula/slide-04.png"))
               .swiper-button-next.ferula-block__slider-button-next
               .swiper-button-prev.ferula-block__slider-button-prev
+          a(href="#").new-design__button.new-design__button-outline попробовать наш продукт
+    .contact-block#contact
+      .wrapper-inner
+        .row
+          .col-12.col-lg-6
+            h2!="ПОДУМАЙТЕ О МАРКЕТИНГЕ И ПОЗИЦИОНИРОВАНИИ  БРЕНДА, <small>А ОСТАЛЬНОЕ МЫ ВОЗЬМЕМ НА СЕБЯ</small>"
+            .contact-block__manager
+              .contact-block__avatar
+                img(src=require('images/avatar.png'))
+              .contact-block__text
+                p Оставьте заявку и наш специалист свяжется с вами в ближайшее время, чтобы ответить на все интересуещие вас вопросы
+          .col-12.col-lg-6
+            form.contact-block__form
+              .contact-block__input-group.contact-block__input-group--name
+                input(placeholder="Ваше имя" type="text" required)
+                img(src=require('images/icons/icon-name.svg'))
+              .contact-block__input-group.contact-block__input-group--city
+                input(placeholder="Ваш город" type="text" required)
+                img(src=require('images/icons/icon-map.svg'))
+              .contact-block__input-group.contact-block__input-group--phone
+                input(placeholder="+ 7(__)-___-__-__" type="text" required)#phone-mask
+                img(src=require('images/icons/icon-phone.svg'))
+              .contact-block__input-group.contact-block__input-group-text.contact-block__input-group--message
+                textarea(placeholder="Текст сообщения")
+                img(src=require('images/icons/icon-text.svg'))
+              .contact-block__input-group.contact-block__input-group--mail
+                input(placeholder="Электронная почта" type="email" required)
+                img(src=require('images/icons/icon-mail.svg'))
+              .contact-block__input-group.contact-block__input-group--button
+                button.new-design__button отправить заявку
+              .contact-block__input-group.contact-block__input-group-check.contact-block__input-group--check
+                input(id="checkboxid" name="checkboxid" type="checkbox")
+                label(for="checkboxid") Даю согласие  на обоаботку персональных данных
 
-
-    include ../components/contact-block

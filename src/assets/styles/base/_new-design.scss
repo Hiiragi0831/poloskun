@@ -74,6 +74,17 @@ html {
       opacity: 0.8;
     }
 
+    &-outline {
+      background-color: transparent;
+      border: 1px solid $color-two;
+      color: $color-two;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-two;
+      }
+    }
+
     @include mobile {
       padding: px(15) px(30);
       font-size: px(12);

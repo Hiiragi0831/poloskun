@@ -1,9 +1,9 @@
 mixin tovar-block-item(img, title)
-  .col.tovar-block__item
-    .tovar-block__item-img
-      img(src=img)
-    .tovar-block__item-box
-      a(href="#").tovar-block__item-title
-        p=title
-        .tovar-block__item-arrow
-      .tovar-block__item-del
+  .col.tovar-block__item(data-aos="fade-up" data-aos-duration="1000")
+    a(href="#")
+      .tovar-block__item-img
+        img(src=img)
+      .tovar-block__item-box
+        .tovar-block__item-title
+          p=title
+          .tovar-block__item-arrow
