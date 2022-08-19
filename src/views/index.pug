@@ -24,7 +24,7 @@ block content
         .modal__content
           p.h1 ВЫберите город
           .city
-            .city__box.city__regoin
+            .city__box.city__regoin.is-visible
               p.city__title Регион
               .city__wrapper(data-simplebar data-simplebar-auto-hide="false")
                 p.city__item  Амурская область
@@ -42,8 +42,9 @@ block content
                 p.city__item  Амурская область
             .city__box.city__gorod
               p.city__title Город
+              button.city__return Изменить регион
               .city__wrapper(data-simplebar data-simplebar-auto-hide="false")
-                p.city__item.is-active  г. Белгород
+                p.city__item  г. Белгород
                 p.city__item  г. Старый Оскол
                 p.city__item  г. Строитель
                 p.city__item  пгт. Разумное
@@ -54,7 +55,7 @@ block content
               input(id="another" name="another" type="checkbox")
               label(for="another") Другой город
             p.modal__check-text Оформление заказа и доставка в города, не входящие в список временно недоступны
-          a(href="#").new-design__button Сохранить
+          button(data-close-modal).new-design__button Сохранить
           button.modal__close-btn(type="button", aria-label="Закрыть попап", data-close-modal)
             img(src=require('images/icons/icon-close.svg'))
 

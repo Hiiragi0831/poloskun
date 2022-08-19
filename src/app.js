@@ -99,13 +99,39 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const city = document.querySelector('.city');
+    const regoin = city.querySelector('.city__regoin');
+    const gorod = city.querySelector('.city__gorod');
     if (city) {
-      city.querySelector('.city__regoin').querySelectorAll('.city__item').forEach(item => {
+      regoin.querySelectorAll('.city__item').forEach(item => {
         item.addEventListener('click', () => {
-          city.querySelector('.city__item.is-active').classList.remove('is-active');
+
+          if (regoin.querySelector('.city__item.is-active')) {
+            regoin.querySelector('.city__item.is-active').classList.remove('is-active');
+          }
+
           item.classList.add('is-active');
-          city.querySelector('.city__gorod').classList.add('is-visible');
+          gorod.classList.add('is-visible');
+
+          if (window.screen.width <= 767) {
+            regoin.classList.remove('is-visible')
+          }
         })
+      })
+
+      gorod.querySelectorAll('.city__item').forEach(item => {
+        item.addEventListener('click', () => {
+          if (gorod.querySelector('.city__item.is-active')) {
+            gorod.querySelector('.city__item.is-active').classList.remove('is-active');
+          }
+
+          item.classList.add('is-active');
+        })
+      })
+
+
+      city.querySelector('.city__return').addEventListener('click', () => {
+        city.querySelector('.city__gorod').classList.remove('is-visible');
+        city.querySelector('.city__regoin').classList.add('is-visible')
       })
     }
   });
