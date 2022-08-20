@@ -169,7 +169,7 @@
   position: relative;
   background-image: url("@~images/bg-franch.png");
   padding-top: 100px;
-  padding-bottom: vw(170);
+  padding-bottom: vw(160);
 
   &__title {
     text-align: center;
@@ -254,14 +254,21 @@
 
   &__item {
     width: 200px;
-    margin-bottom: 30px;
+    margin-bottom: vw(30);
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item-img {
-    max-width: 145px;
+    max-width: vw(145);
+    @media (min-width: 767px) and (max-width: 991px) {
+      max-width: 100px;
+    }
   }
 
   &__item-text {
@@ -757,7 +764,7 @@
       height: 100%;
 
       @media (max-width: 1024px) {
-        object-position: 30% center;
+        object-position: 42% center;
       }
     }
   }
@@ -1051,8 +1058,12 @@
     height: 80px;
 
     @media (max-width: 1520px) {
-      background-color: #F6F6F6;
       border-radius: 100%;
+      transition: background-color 0.4s;
+
+      &:hover {
+        background-color: #F6F6F6;
+      }
     }
   }
 
